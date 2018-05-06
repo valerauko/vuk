@@ -25,5 +25,6 @@
 
 (def host-meta
   "Generates host-meta XML from an URL template. It's passed as-is.
-  Common template is https://example.com/.well-known/webfinger?resource={uri}"
+  Common template is https://example.com/.well-known/webfinger?resource={uri}
+  This is expected to live at .well-known/host-meta"
   response/host-meta)

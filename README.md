@@ -40,6 +40,12 @@ It returns the first link node with a `rel` matching the given parameter.
 ```
 Returns a string representing the user as WebFinger JSON or XML. You can pass the format in with `:as` (it defaults to JSON).
 
+### Host meta
+```
+(host-meta "https://pawoo.net/.well-known/webfinger?resource={uri}")
+```
+Generates the `host-meta` XML for your host. The provided parameter is embedded in the XML without any adjustments.
+
 ## Todo
 * put on Clojars
 * more tests
