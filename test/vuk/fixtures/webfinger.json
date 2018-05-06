@@ -1,0 +1,36 @@
+{
+  "subject": "acct:valerauko@pawoo.net",
+  "aliases": [
+    "https://pawoo.net/@valerauko",
+    "https://pawoo.net/users/valerauko"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://pawoo.net/@valerauko"
+    },
+    {
+      "rel": "http://schemas.google.com/g/2010#updates-from",
+      "type": "application/atom+xml",
+      "href": "https://pawoo.net/users/valerauko.atom"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://pawoo.net/users/valerauko"
+    },
+    {
+      "rel": "salmon",
+      "href": "https://pawoo.net/api/salmon/52392"
+    },
+    {
+      "rel": "magic-public-key",
+      "href": "data:application/magic-public-key,RSA.sf-mU8UOXAJAP0yUDOAH8hp_2MurCwBMRgjw9_CVil-QsrbOccsnfxv-ZslEB6BTyBdJnXOliWX0KQ6aZ-kgCh3ys7I5-MJYEatx_J-TmWo3prbIVv65cBRWgz6f8TCOQHJIKTBgobx6DQD3CUTMZnnh4fXQ83gOsKGi14aJ0ub49ob1GUP_HeywwQLal1TeHzUhg31HKgbOsfHOpDWvOnWOtOJUcu02odCLE0VPmkZ0ODeuSRFpK2kGHxPc1PkNM2OT9EU_czjOyHD5R9Tv3gz65EFz0sMSEGG7JedfgdeTjs85TtBuV5W0RTyeeQ1JR7KtMPXxkAYVvqFULzpyiw==.AQAB"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://pawoo.net/authorize_follow?acct={uri}"
+    }
+  ]
+}

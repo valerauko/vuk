@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/data.xml "0.0.8"]
                  [cheshire "5.8.0"]
-                 [clj-http "3.9.0"]])
+                 [clj-http "3.9.0"]]
+  :profiles {:dev {:dependencies[[clj-http-fake "1.0.3"]]}})
