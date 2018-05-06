@@ -1,4 +1,4 @@
-# Vuk
+# Vuk [![Build Status](https://travis-ci.com/valerauko/vuk.svg?branch=master)](https://travis-ci.com/valerauko/vuk)
 
 A Clojure library to handle WebFinger interactions for you.
 
