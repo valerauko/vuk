@@ -1,8 +1,7 @@
 (ns vuk.request
   (:require [clj-http.client :as http]
             [cheshire.core :as json]
-            [clojure.xml :as xml]
-            [clojure.java.io :as io]
+            [clojure.data.xml :as xml]
             [clojure.string :as str]))
 
 (defn standard-url
@@ -43,7 +42,7 @@
 (defn parse-xml
   [body]
   ; xml/parse doesn't work with strings so i've gotta hack it like this
-  (let [{tags :content} (-> body .getBytes io/input-stream xml/parse)]
+  (let [{tags :content} (xml/parse-str body)]
     (reduce
       (fn [aggr tag]
         (case (:tag tag)
