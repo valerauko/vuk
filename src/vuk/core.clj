@@ -22,3 +22,8 @@
   (case format
     (:json :JSON "json" "JSON") (response/represent-json user)
     (:xml :XML "xml" "XML") (response/represent-xml user)))
+
+(def host-meta
+  "Generates host-meta XML from an URL template. It's passed as-is.
+  Common template is https://example.com/.well-known/webfinger?resource={uri}"
+  response/host-meta)

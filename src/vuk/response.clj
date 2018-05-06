@@ -17,3 +17,11 @@
   Expects input to be the format of core/finger's output."
   [hashmap]
   (json/generate-string hashmap))
+
+(defn host-meta
+  "Generates host-meta XML from an URL template. It's passed as-is."
+  [template]
+  (xml/emit-str
+    (xml/element :XRD { :xmlns "http://docs.oasis-open.org/ns/xri/xrd-1.0" }
+      (xml/element :Link { :rel "lrdd" :type "application/xrd+xml"
+                           :template template }))))
