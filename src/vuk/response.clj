@@ -1,5 +1,5 @@
 (ns vuk.response
-  (:require [cheshire.core :as json]
+  (:require [jsonista.core :as json]
             [clojure.data.xml :as xml]))
 
 (defn represent-xml
@@ -16,7 +16,7 @@
   "Prints a user's representation as JSON.
   Expects input to be the format of core/finger's output."
   [hashmap]
-  (json/generate-string hashmap))
+  (json/write-value-as-string hashmap))
 
 (defn host-meta
   "Generates host-meta XML from an URL template. It's passed as-is."

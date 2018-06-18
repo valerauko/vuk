@@ -1,6 +1,6 @@
 (ns vuk.request
   (:require [clj-http.client :as http]
-            [cheshire.core :as json]
+            [jsonista.core :as json]
             [clojure.data.xml :as xml]
             [clojure.string :as str]))
 
@@ -58,7 +58,8 @@
   [response]
   (let [{body :body {type :content-type} :headers} response]
     (case (->> type (re-find #"(\w+/[\w+]+)") last)
-      ("application/jrd+json" "application/json") (json/parse-string body true)
+      ("application/jrd+json" "application/json")
+        (json/read-value body (json/object-mapper {:decode-key-fn true}))
       ("application/xrd+xml" "application/xml" "text/xml") (parse-xml body))))
 
 (defn lookup
