@@ -1,10 +1,8 @@
-# Vuk [![Build Status](https://travis-ci.com/valerauko/vuk.svg?branch=master)](https://travis-ci.com/valerauko/vuk)
+# Vuk [![Build Status](https://travis-ci.com/valerauko/vuk.svg?branch=master)](https://travis-ci.com/valerauko/vuk)[![Clojars Project](https://img.shields.io/clojars/v/vuk.svg)](https://clojars.org/vuk)
 
 A Clojure library to handle WebFinger interactions for you.
 
 ## Usage
-
-[![Clojars Project](https://img.shields.io/clojars/v/vuk.svg)](https://clojars.org/vuk)
 
 ### Finger
 ```
@@ -49,7 +47,6 @@ Returns a string representing the user as WebFinger JSON or XML. You can pass th
 Generates the `host-meta` XML for your host. The provided parameter is embedded in the XML without any adjustments.
 
 ## Todo
-* put on Clojars
 * more tests
 * support for `properties`
 
