@@ -4,6 +4,8 @@ A Clojure library to handle WebFinger interactions for you.
 
 ## Usage
 
+[![Clojars Project](https://img.shields.io/clojars/v/vuk.svg)](https://clojars.org/vuk)
+
 ### Finger
 ```
 (finger "acct:valerauko@pawoo.net")
