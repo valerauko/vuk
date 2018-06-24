@@ -66,6 +66,6 @@
   ([acct options] (lookup acct options (lookup-standard acct options)))
   ([acct options response]
     (let [{status :status} response]
-      (case status
-        200 (parse-response response)
+      (if (= status 200)
+        (parse-response response)
         (lookup acct options (lookup-template acct options))))))
