@@ -1,6 +1,12 @@
-# Vuk [![Build Status](https://travis-ci.com/valerauko/vuk.svg?branch=master)](https://travis-ci.com/valerauko/vuk)[![Clojars Project](https://img.shields.io/clojars/v/kitsune/vuk.svg)](https://clojars.org/kitsune/vuk)
+# Vuk [![Build Status](https://travis-ci.com/valerauko/vuk.svg?branch=master)](https://travis-ci.com/valerauko/vuk)[![Clojars Project](https://img.shields.io/clojars/v/social.kitsune/vuk.svg)](https://clojars.org/social.kitsune/vuk)
 
 A Clojure library to handle WebFinger interactions for you.
+
+## Installation
+
+```
+[social.kitsune/vuk "0.0.2"]
+```
 
 ## Usage
 
