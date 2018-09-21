@@ -6,12 +6,12 @@
 
 (defn standard-url
   "The common format of WebFinger URLs"
-  [{:keys [scheme domain user] :or {scheme "https"}}]
+  [{:keys [scheme domain user] :or {scheme "http"}}]
   (str scheme "://" domain "/.well-known/webfinger?resource=" user))
 
 (defn host-meta
   "The WebFinger host metadata URL"
-  [{:keys [scheme domain] :or {scheme "https"}}]
+  [{:keys [scheme domain] :or {scheme "http"}}]
   (str scheme "://" domain "/.well-known/host-meta"))
 
 (defn acct-data
