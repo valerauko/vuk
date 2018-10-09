@@ -1,5 +1,5 @@
 (ns vuk.request
-  (:require [clj-http.client :as http]
+  (:require [aleph.http :as http]
             [jsonista.core :as json]
             [clojure.data.xml :as xml]
             [clojure.string :as str]))
@@ -23,7 +23,7 @@
   [acct options]
   (let [[user host] (acct-data acct)
         uri (standard-url (merge {:domain host :user user} options))]
-    (http/get uri)))
+    @(http/get uri)))
 
 (defn lookup-template
   "xml/parse will raise various errors if there is no template or it's not xml"
@@ -37,7 +37,7 @@
       (first v)
       (-> v :attrs :template)
       (str/replace v "{uri}" user)
-      (http/get v))))
+      @(http/get v))))
 
 (defn parse-xml
   [body]
