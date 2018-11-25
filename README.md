@@ -5,7 +5,7 @@ A Clojure library to handle WebFinger interactions for you.
 ## Installation
 
 ```
-[social.kitsune/vuk "0.1.0"]
+[social.kitsune/vuk "0.2.0"]
 ```
 
 ## Usage
