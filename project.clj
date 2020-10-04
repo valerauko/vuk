@@ -1,4 +1,4 @@
-(defproject social.kitsune/vuk "0.2.0"
+(defproject social.kitsune/vuk "0.2.1"
   :description "A Clojure library to handle WebFinger interactions for you."
   :url "http://github.com/valerauko/vuk"
   :license {:name "Eclipse Public License"
