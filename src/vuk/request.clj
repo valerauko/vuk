@@ -59,13 +59,13 @@
   (let [{body :body {type :content-type} :headers} response]
     (case (->> type (re-find #"(\w+/[\w+]+)") last)
       ("application/jrd+json" "application/json")
-        (json/read-value body (json/object-mapper {:decode-key-fn true}))
+      (json/read-value body (json/object-mapper {:decode-key-fn true}))
       ("application/xrd+xml" "application/xml" "text/xml") (parse-xml body))))
 
 (defn lookup
   ([acct options] (lookup acct options (lookup-standard acct options)))
   ([acct options response]
-    (let [{status :status} response]
-      (if (= status 200)
-        (parse-response response)
-        (lookup acct options (lookup-template acct options))))))
+   (let [{status :status} response]
+     (if (= status 200)
+       (parse-response response)
+       (lookup acct options (lookup-template acct options))))))

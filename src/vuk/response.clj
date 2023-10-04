@@ -7,7 +7,7 @@
   Expects input to be the format of core/finger's output."
   [{:keys [subject aliases links] :or {aliases [] links []}}]
   (xml/emit-str
-    (xml/element :XRD { :xmlns "http://docs.oasis-open.org/ns/xri/xrd-1.0" }
+    (xml/element :XRD { :xmlns "http://docs.oasis-open.org/ns/xri/xrd-1.0"}
       (conj [(xml/element :Subject {} subject)]
         (map #(xml/element :Alias {} %) aliases)
         (map #(xml/element :Link % "") links)))))
@@ -22,6 +22,6 @@
   "Generates host-meta XML from an URL template. It's passed as-is."
   [template]
   (xml/emit-str
-    (xml/element :XRD { :xmlns "http://docs.oasis-open.org/ns/xri/xrd-1.0" }
+    (xml/element :XRD { :xmlns "http://docs.oasis-open.org/ns/xri/xrd-1.0"}
       (xml/element :Link { :rel "lrdd" :type "application/xrd+xml"
-                           :template template }))))
+                           :template template}))))

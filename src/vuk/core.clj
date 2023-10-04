@@ -6,7 +6,7 @@
   "The main function to look up an 'acct'."
   ([acct] (finger acct {}))
   ([acct options]
-    (request/lookup acct options)))
+   (request/lookup acct options)))
 
 (defn link
   ; REVIEW: i'm assuming that rels are supposed to be unique.
