@@ -3,6 +3,9 @@
   :url "http://github.com/valerauko/vuk"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v20.html"}
+  :scm {:name "git"
+        :url "https://github.com/valerauko/vuk"
+        :tag "v0.2.2"}
   :dependencies [[org.clojure/data.xml "0.0.8"]
                  [metosin/jsonista "0.3.8"]
                  [aleph "0.6.3"]]
