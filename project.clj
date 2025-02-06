@@ -18,7 +18,9 @@
                    :plugins [[lein-ancient "0.7.0"
                               :exclusions [org.clojure/clojure]]]}
              :clj1.10.3 {:dependencies
-                         [[org.clojure/clojure "1.10.3"]]}
+                         [[org.clojure/clojure "1.10.3"]
+                          ;; newer aleph doesn't seem to compile on older clojure
+                          [aleph "0.6.4"]]}
              :clj1.11.4 {:dependencies
                          [[org.clojure/clojure "1.11.4"]]}
              :clj1.12.0 {:dependencies
