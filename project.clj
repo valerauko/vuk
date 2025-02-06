@@ -17,9 +17,9 @@
                                  *unchecked-math* :warn-on-boxed}
                    :plugins [[lein-ancient "0.7.0"
                               :exclusions [org.clojure/clojure]]]}
-             :clj1.9.0 {:dependencies
-                        [[org.clojure/clojure "1.9.0"]]}
              :clj1.10.3 {:dependencies
                          [[org.clojure/clojure "1.10.3"]]}
              :clj1.11.1 {:dependencies
-                         [[org.clojure/clojure "1.11.1"]]}})
+                         [[org.clojure/clojure "1.11.4"]]}
+             :clj1.12.0 {:dependencies
+                         [[org.clojure/clojure "1.12.0"]]}})
