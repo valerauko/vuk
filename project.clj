@@ -19,7 +19,7 @@
                               :exclusions [org.clojure/clojure]]]}
              :clj1.10.3 {:dependencies
                          [[org.clojure/clojure "1.10.3"]]}
-             :clj1.11.1 {:dependencies
+             :clj1.11.4 {:dependencies
                          [[org.clojure/clojure "1.11.4"]]}
              :clj1.12.0 {:dependencies
                          [[org.clojure/clojure "1.12.0"]]}})
