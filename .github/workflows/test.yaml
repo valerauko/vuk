@@ -26,7 +26,7 @@ jobs:
           java-version: "${{ matrix.jdk }}"
           distribution: temurin
           cache: maven
-      - uses: delaguardo/setup-clojure@13
+      - uses: delaguardo/setup-clojure@13.1
         with:
           lein: 2.11.2
       - name: Run tests
