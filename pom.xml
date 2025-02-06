@@ -4,7 +4,7 @@
   <groupId>social.kitsune</groupId>
   <artifactId>vuk</artifactId>
   <packaging>jar</packaging>
-  <version>0.2.2</version>
+  <version>0.2.3</version>
   <name>vuk</name>
   <description>A Clojure library to handle WebFinger interactions for you.</description>
   <url>http://github.com/valerauko/vuk</url>
@@ -18,7 +18,7 @@
     <url>https://github.com/valerauko/vuk</url>
     <connection>scm:git:git://github.com/valerauko/vuk.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/valerauko/vuk.git</developerConnection>
-    <tag>v0.2.2</tag>
+    <tag>v0.2.3</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
