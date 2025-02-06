@@ -18,7 +18,7 @@
     <url>https://github.com/valerauko/vuk</url>
     <connection>scm:git:git://github.com/valerauko/vuk.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/valerauko/vuk.git</developerConnection>
-    <tag>e6e76ae449e67a8c924669f0e98459188e09a13b</tag>
+    <tag>v0.2.2</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -71,17 +71,17 @@
     <dependency>
       <groupId>metosin</groupId>
       <artifactId>jsonista</artifactId>
-      <version>0.3.8</version>
+      <version>0.3.13</version>
     </dependency>
     <dependency>
       <groupId>aleph</groupId>
       <artifactId>aleph</artifactId>
-      <version>0.6.3</version>
+      <version>0.8.2</version>
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
-      <version>1.10.1</version>
+      <version>1.12.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
